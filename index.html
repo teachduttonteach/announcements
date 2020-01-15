@@ -1,0 +1,21 @@
+<html>
+<head>
+<META http-equiv="refresh" content="5"> 
+	<script>
+		// update with the desired time to refresh the presentation (in minutes)
+		var refreshMinutes = 0.1;
+		
+		var timer=setInterval(function(){refreshFrame()}, refreshMinutes*60*1000);
+		function refreshFrame()
+		{
+			var iframe = document.getElementById('presentFrame');
+			var iframeURL = iframe.src;
+			iframe.src = iframeURL;
+		}
+	</script>
+	<title>CIHS Announcements</title>
+</head>
+<body bgcolor="#000000">
+<p><iframe name="slides" id="presentFrame" allowfullscreen="true" frameborder="0" mozallowfullscreen="true" src="https://docs.google.com/presentation/d/e/2PACX-1vTh-fyDwXrWwhUAOuCBh5s3v_WzgpdPoV_oBjxYPTxraxjmmI7GegFkj9yFVXIaa_NpNXjF__ZHtkH-/embed?start=true&amp;loop=true&amp;delayms=8000" webkitallowfullscreen="true"></iframe></p>
+</body>
+</html>
